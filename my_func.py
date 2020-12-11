@@ -883,7 +883,7 @@ def plot_roi_by_model(df, x, y, color, title, orient='h'):
     fig = px.bar(df, x, y, color=color, orientation=orient, title=title)
     
     # update layout
-    fig.update_layout(yaxis_type='category', barmode='group', shapes= shapes, showlegend=False)
+    fig.update_layout(yaxis_type='category', barmode='group', shapes= shapes, showlegend=True)
     fig.update_xaxes(showline=True, linewidth=1, linecolor='gray', mirror=True)
     
     if x == 'mean_roi':
